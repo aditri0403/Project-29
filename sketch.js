@@ -32,7 +32,7 @@ function setup() {
   polygon = Bodies.circle(50,200,20);
   World.add(world,polygon);
 
-  slingShot = new slingshot(this.polygon,{x:100,y:200});
+  slingShot = new slingshot(polygon,{x:100,y:200});
   //createSprite(400, 200, 50, 50);
 }
 
@@ -56,6 +56,8 @@ function draw() {
   ground1.display();
   ground1.display();
   ground1.display();
+  polygon.display();
+  slingShot.display();
   drawSprites();
 }
 function mouseReleased(){

@@ -56,8 +56,8 @@ function draw() {
   ground1.display();
   ground1.display();
   ground1.display();
-  polygon.display();
   slingShot.display();
+  ellipse(50,200,20,20);
   drawSprites();
 }
 function mouseReleased(){
